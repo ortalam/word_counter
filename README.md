@@ -1,10 +1,10 @@
-cd lemonade_exercise
+cd word_counter
 
-Installation
+Installation:
 npm install
 
 Start:
-node index.js
+npm start
 
 Assumptions:
 - I've removed special characters like ' for example- don't => dont

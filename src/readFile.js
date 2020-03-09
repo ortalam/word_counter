@@ -1,13 +1,15 @@
 const fs = require('fs');
 const es = require('event-stream');
 const countUniqueWords = require('./countUniqueWords');
+const Reader = require('./reader');
 
-class ReadFile{
+class ReadFile extends Reader {
     constructor(filePath) {
+        super();
         this.filePath = filePath;
     }
 
-    readFromFile () {
+    read () {
         let uniqueWords = new countUniqueWords('');
         return new Promise((resolve, reject) => {
             fs.createReadStream(this.filePath)
@@ -22,8 +24,6 @@ class ReadFile{
                             reject('Error while reading file.', err);
                         })
                         .on('end', async function() {
-                            //todo: fix complexity
-                            console.log('end file!!');
                             resolve(uniqueWords);
                         }),
                 );

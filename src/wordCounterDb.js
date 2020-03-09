@@ -29,13 +29,16 @@ class WordCounterDb{
                     }}
             );
         }
-        await this.wordCounter.bulkWrite(operations, { "ordered": false });
+        try{
+            await this.wordCounter.bulkWrite(operations, { "ordered": false });
+        }catch (e) {
+            console.log(e);
+        }
     }
 
     async findWordInDb(word){
         try {
-            let wordCounterObj = await this.wordCounter.findOne({word});
-            return wordCounterObj;
+            return await this.wordCounter.findOne({word});
         }catch (e) {
             console.log(e);
         }
