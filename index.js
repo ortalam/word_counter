@@ -1,5 +1,5 @@
 const wordCounterDb = require('./src/wordCounterDb');
-const ReaderFactory = require('./src/readerFactory');
+const ReaderFactory = require('./src/modules/reader/readerFactory');
 
 const menu = require('./src/menu');
 const readline = require("readline");

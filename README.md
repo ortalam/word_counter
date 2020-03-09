@@ -1,9 +1,9 @@
 cd word_counter
 
-Installation:
+Installation
 npm install
 
-Start:
+Start
 npm start
 
 Assumptions:
