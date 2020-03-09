@@ -1,6 +1,6 @@
 const fs = require('fs');
 const es = require('event-stream');
-const countUniqueWords = require('../../countUniqueWords');
+const countUniqueWords = require('../uniqueWords');
 const Reader = require('./reader');
 
 class ReadFile extends Reader {

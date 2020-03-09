@@ -1,7 +1,7 @@
-const wordCounterDb = require('./src/wordCounterDb');
-const ReaderFactory = require('./src/modules/reader/readerFactory');
+const wordCounterDb = require('./src/lib/wordCounterDb');
+const ReaderFactory = require('./src/lib/reader');
 
-const menu = require('./src/menu');
+const menu = require('./src/lib/menu');
 const readline = require("readline");
 
 const rl = readline.createInterface({

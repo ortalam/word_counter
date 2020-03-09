@@ -1,4 +1,4 @@
-const UniqueWords = require('../../countUniqueWords');
+const UniqueWords = require('../uniqueWords');
 const Reader = require('./reader');
 
 class ReadText extends Reader{

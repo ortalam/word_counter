@@ -1,5 +1,5 @@
 const fetch = require('node-fetch');
-const UniqueWords = require('../../countUniqueWords');
+const UniqueWords = require('../uniqueWords');
 const Reader = require('./reader');
 
 class ReadUrl extends Reader{
