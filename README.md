@@ -1,11 +1,15 @@
-cd word_counter
+## Word Counter
 
-Installation
-npm install
+cd `word_counter`
 
-Start
-npm start
+### Installation
+`npm install`
 
-Assumptions:
+### Start
+`npm start`
+
+
+### Assumptions:
+
 - I've removed special characters like ' for example- don't => dont
 
