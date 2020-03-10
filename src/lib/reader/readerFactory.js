@@ -3,19 +3,15 @@ const ReadUrl = require('./readUrl');
 const ReadText = require('./readText');
 
 class readerFactory{
-    createReader(type, textSource){
+    createReader(args){
         let reader;
 
-        switch (type) {
-            case '1':
-                reader = new ReadText(textSource);
-                break;
-            case '2':
-                reader = new ReadFile(textSource);
-                break;
-            case '3':
-                reader = new ReadUrl(textSource);
-                break;
+        if (args.text){
+            reader = new ReadText(args.text);
+        }else if (args.file){
+            reader = new ReadFile(args.file);
+        }else if(args.url){
+            reader = new ReadUrl(args.url);
         }
 
         return reader;
