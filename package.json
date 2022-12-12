@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "event-stream": "^4.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mongoose": "^5.9.3",
     "node-fetch": "^2.6.0",
     "yargs": "^15.3.0"
